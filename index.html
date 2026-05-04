@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小进度 - 简洁高效的项目进度管理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00d4ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon {
+            width: 120px;
+            height: 120px;
+            background: #000;
+            border-radius: 24px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
+        }
+        .progress-bar {
+            width: 80%;
+            height: 12px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #00ff88);
+            border-radius: 6px;
+            width: 70%;
+        }
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.8);
+            margin: 30px 0;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+        }
+        .feature {
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+        .feature strong {
+            color: #00d4ff;
+        }
+        .footer {
+            margin-top: 50px;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+        .copyright {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>小进度</h1>
+        
+        <div class="icon">
+            <svg width="80" height="40" viewBox="0 0 100 40">
+                <rect x="0" y="14" width="100" height="12" rx="6" fill="#333"/>
+                <rect x="0" y="14" width="70" height="12" rx="6" fill="url(#grad)"/>
+                <circle cx="75" cy="20" r="12" fill="white"/>
+                <defs>
+                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#00d4ff"/>
+                        <stop offset="100%" style="stop-color:#00ff88"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <p class="description">
+            简洁高效的项目进度管理工具<br>
+            让您轻松追踪每个项目的完成进度
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <strong>✨ 多项目管理</strong><br>
+                同时追踪多个项目，互不干扰
+            </div>
+            <div class="feature">
+                <strong>🎯 直观便捷</strong><br>
+                拖拽调整进度，实时更新
+            </div>
+            <div class="feature">
+                <strong>🎨 独特配色</strong><br>
+                每个项目独特颜色，一目了然
+            </div>
+            <div class="feature">
+                <strong>📱 极简设计</strong><br>
+                纯黑背景，专注内容
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>如有疑问，请联系作者</p>
+            <p class="copyright">© 2026 作者惠宇 All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
